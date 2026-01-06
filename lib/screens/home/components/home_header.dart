@@ -1,3 +1,4 @@
+import 'package:adon/screens/home/components/logout_icon_button.dart';
 import 'package:flutter/material.dart';
 
 import '../../cart/cart_screen.dart';
@@ -23,13 +24,9 @@ class HomeHeader extends StatelessWidget {
             press: () => Navigator.pushNamed(context, CartScreen.routeName),
           ),
           const SizedBox(width: 8),
-          IconBtnWithCounter(
-            svgSrc: "assets/icons/Bell.svg",
-            numOfitem: 3,
-            press: () {},
-          ),
-        ],
-      ),
+            const LogoutIconButton(),
+          ],
+        )
     );
   }
 }
