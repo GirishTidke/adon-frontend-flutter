@@ -1,9 +1,9 @@
+import 'package:adon/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
 import '../../../helper/keyboard.dart';
 import '../../forgot_password/forgot_password_screen.dart';
-import '../../login_success/login_success_screen.dart';
 import '../../../features/auth/auth_service.dart';
 
 class SignForm extends StatefulWidget {
@@ -110,7 +110,7 @@ class _SignFormState extends State<SignForm> {
                   );
 
                   if (success) {
-                    Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+                    Navigator.pushNamed(context, HomeScreen.routeName);
                   }
                 }
               },
